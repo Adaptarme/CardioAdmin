@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CardioAdmin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<div id="header" class="header-container header-fixed">
+		<header class="top-header clearfix">
+			<div class="logo">
+				<a href="#/dashboard">CardioAdmin</a>
+			</div>
+			<div class="top-nav" navbar-top></div>
+		</header>
+	</div><!-- #header -->
+
+	<div class="main-container">
+		<div class="nav-container" navbar-left></div>
+		<section class="content-container">
+			<div class="page" ng-view></div>
+		</section>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="js/ui-bootstrap-tpls-0.11.0.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-sanitize.min.js"></script>
+	<script src="//cdn.jsdelivr.net/satellizer/0.6.4/satellizer.min.js"></script>
+	
+	<!-- App -->
+	<script src="app/module.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="app/config.js"></script>
+
+	<!-- Dashboard -->
+	<script src="app/ui/components/navbar-top.js"></script>
+	<script src="app/ui/components/navbar-left.js"></script>
+
+	<!-- Patient -->
+	<script src="app/ui/pages/patient/controllers.js"></script>
+	<script src="app/services/patient.js"></script>
+	
+	<!-- Medical Insurance -->
+	<script src="app/ui/pages/medical-insurance/services.js"></script>
+	<script src="app/ui/pages/medical-insurance/controllers.js"></script>
+
+	</body>
+</html>

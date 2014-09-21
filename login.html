@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CardioAdmin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body style="padding-top: 50px;">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-5 col-md-offset-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Log in</h3>
+					</div>
+					<div class="panel-body" ng-controller="LoginController">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" name="email" ng-model="email" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" name="password" ng-model="password" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<a href="/#/" class="btn btn-default">Sign in</a>
+				</div>
+			</div>
+		</form>
+		<!-- <button class="btn btn-block btn-twitter" ng-click="authenticate('twitter')"><i class="fa fa-twitter"></i> Sign in with Twitter</button> -->
+		</div>	
+		</div>	
+	</div>
+</div>
+
+</div><!-- .container -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.js"></script>
+	<script src="//cdn.jsdelivr.net/satellizer/0.6.4/satellizer.min.js"></script>
+	
+	<!-- App -->
+	<script src="app/module.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="app/config.js"></script>
+
+	<!-- Layout -->
+	<script src="app/layout/controllers.js"></script>
+
+	<!-- Dashboard -->
+	<script src="app/dashboard/directives.js"></script>
+
+	<!-- Patient -->
+	<script src="app/patient/controllers.js"></script>
+	<script src="app/patient/services.js"></script>
+	
+	<!-- Medical Insurance -->
+	<script src="app/medical-insurance/services.js"></script>
+	<script src="app/medical-insurance/controllers.js"></script>
+
+	</body>
+</html>

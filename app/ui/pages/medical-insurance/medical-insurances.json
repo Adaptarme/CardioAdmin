@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "initial": "OSPA",
+    "name": "Obra Social del Personal Aeronautico",
+    "address": "Anchorena 1250 - Ciudad Autonoma de Buenos Aires",
+    "phone": "(011) 4823-7121"
+},
+{
+    "id": 2,
+    "initial": "OSPIDA",
+    "name": "Obra Social Personal de Imprentas, Diarios y Afines",
+    "address": "San José 157, Ciudad Autonoma de Buenos Aires",
+    "phone": "(011) 4382-2051"
+},
+{
+    "id": 3,
+    "initial": "INSSSEP",
+    "name": "Instituto Seguridad Social, Seguros y Préstamos",
+    "address": "Av. 9 de Julio 347, Resistencia",
+    "phone": "(0362) 4414400"
+}]
