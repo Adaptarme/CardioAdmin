@@ -1,15 +1,11 @@
-(function () {
-	'use strict';
-
-	angular
-	.module('navBarTop', [])
+angular.module('components', [])
 	.directive('navbarTop', navbarTop);
 
-	/** Mostrar la barra de navegación en la cabecera. */
-	function navbarTop() {
-		return {
-			templateUrl: "app/ui/components/navbar-top.html"
-		}
-	}
-
-})();
+/** Directiva para mostrar la barra de navegación en la cabecera. */
+function navbarTop() {
+	return {
+		restrict: 'A',
+		templateUrl: 'app/ui/components/navbar-top.html'
+		//replace: true		
+	};
+}
