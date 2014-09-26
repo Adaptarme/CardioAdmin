@@ -1,0 +1,10 @@
+{
+  "name": "CardioAdmin",
+  "version": "0.0.0",
+  "description": "Administrador de pacientes para una clínica de Médicos Cardiologos.",
+  "repository": "https://github.com/Adaptarme/CardioAdmin",
+  "devDependencies": {
+    "load-grunt-config": "^0.13.1",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}

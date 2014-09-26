@@ -3,15 +3,16 @@
   "description": "Administrador de pacientes para una clínica de Médicos Cardiologos.",
   "version": "0.0.0",
   "homepage": "https://github.com/Adaptarme/CardioAdmin",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.2.0"
+    },
   "devDependencies": {
     "jquery": "~2.1.1",
     "angular": "~1.2.25",
     "angular-bootstrap": "~0.11.0",
     "angular-route": "~1.2.25",
     "angular-resource": "~1.2.25",
-    "angular-sanitize": "~1.2.25",
-    "bootstrap": "~3.2.0",
-    "font-awesome": "~4.2.0"
+    "angular-sanitize": "~1.2.25"
   }
 }
