@@ -1,6 +1,25 @@
 # CardioAdmin
 
-### Instalación
-Para comenzar, debemos instalara las dependencias necesarias para que la aplicación funcione correctamente. Abrimos la terminal y escribimos bower install. Nota: es necesario tener previamente instalado Bower para ejecutar el comando.
+### Requisitos previos
+Necesita [Git](http://git-scm.com/) para clonar el repositorio, [Node.js](http://nodejs.org/) y su gestor de paquetes (NPM) para realizar la instalación.
 
-Para ejecutar el servidor necesitamos tener instalado Python. En la terminan, dentro de la carpeta CardioAdmin ejecutamos el siguiente comando: python -m SimpleHTTPServer 8000. Luego abrimos el navegador y escribimos http://localhost:8000. Nota: si tienes instalado Python 3 deberás usar el siguiente comando python -m http.server --cgi 8000 para ejecutar el server.
+## Empezando
+Para comenzar puedes clonar el repositorio e instalar las dependencias:
+
+### Clone AngularJS-Base
+```bash
+$ git clone https://github.com/Adaptarme/CardioAdmin.git
+$ cd CadioAdmin
+```
+
+### Instalar dependencias
+```bash
+$ npm install
+```
+
+### Iniciar el servidor
+```bash
+$ grunt connect
+```
+
+Por último, abra su navegador web e introduzca `http://localhost:8000`.
