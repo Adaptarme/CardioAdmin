@@ -4,6 +4,7 @@
 module.exports = {
 	files: ['app/ui/**/*.js'],
 	options: {
-		jshintrc: '.jshintrc'
+		jshintrc: '.jshintrc',
+		reporter: require('jshint-stylish')
 	}
 };
