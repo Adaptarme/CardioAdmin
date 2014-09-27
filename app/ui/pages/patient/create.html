@@ -1,0 +1,69 @@
+<form role="form">
+  <div class="modal-header">
+    <h3 class="modal-title">Agregar un nuevo Paciente</h3>
+  </div><!-- .modal-header -->
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" class="form-control" placeholder="Juan">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Apellido</label>
+          <input type="text" class="form-control" placeholder="Perez">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>DNI</label>
+          <input type="text" class="form-control" placeholder="00000000">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Nacimiento</label>
+          <input type="text" class="form-control" placeholder="día/mes/año">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group" style="margin-top: 25px; margin-bottom: 0;">
+          <label>Sexo</label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" value="M"> Masculino
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" value="option2"> Femenino
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Télefono</label>
+          <input type="text" class="form-control" placeholder="0000-000000">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Obra Social</label>
+          <select multiple class="form-control">
+            <option value="0" selected="selected">Ninguna</option>
+            <optgroup label="-"></optgroup>
+            <option>OSPA</option>
+            <option>OSPIDA</option>
+            <option>INSSSEP</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-xs-6">
+      <div class="form-group"></div>
+      </div>
+    </div><!-- .row -->
+  </div><!-- .modal-body -->
+  <div class="modal-footer">
+    <button class="btn btn-default" ng-click="cancel()">Cancelar</button>
+    <button class="btn btn-success" ng-click="create()">Guardar</button>
+  </div>
+</form>

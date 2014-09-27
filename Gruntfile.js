@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = function (grunt) {
+
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json')
+	});
 	
 	/** Mostrar el tiempo de ejecución de las tareas.
 	 * @link https://github.com/sindresorhus/time-grunt

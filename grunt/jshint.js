@@ -5,6 +5,9 @@ module.exports = {
 	files: ['app/ui/**/*.js'],
 	options: {
 		jshintrc: '.jshintrc',
+		/** Reportes con estilo para JSHint
+		 * @link https://github.com/sindresorhus/jshint-stylish
+		 */
 		reporter: require('jshint-stylish')
 	}
 };

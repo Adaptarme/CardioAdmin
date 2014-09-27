@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default" ng-controller="PatientController">
 	<div class="panel-heading clearfix">
 		<div class="pull-left">
 			<input type="text" class="form-control" placeholder="Search" ng-model="searchText">
@@ -7,7 +7,7 @@
 			<button type="button" class="btn btn-success" ng-click="create()"><span class="glyphicon glyphicon-plus"></span> Create</button>
 		</div>
 	</div>
-	<table class="table table-hover table-responsive" ng-controller="PatientListController">
+	<table class="table table-hover table-responsive">
 		<thead>
 			<tr>
 				<th>#</th>
