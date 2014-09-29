@@ -1,7 +1,7 @@
 angular
 	.module('patient.controllers', ['ngResource', 'ui.bootstrap', 'patient.services'])
-	.controller('PatientController', ['$scope', '$modal', 'patientService', patientController]);
-
+	.controller('PatientController', ['$scope', '$modal', patientController]);
+    
 function patientController($scope, $modal, patient) {
 	$scope.patients = patient.query();
 
@@ -14,7 +14,6 @@ function patientController($scope, $modal, patient) {
 
 	/**
      * Mostrar un modal para confirmar la eliminación del paciente.
-     * @param {number} patientId - Id del paciente.
      */
     $scope.delete = function () {
     	$modal.open({

@@ -6,7 +6,7 @@ Necesita [Git](http://git-scm.com/) para clonar el repositorio, [Node.js](http:/
 ## Empezando
 Para comenzar puedes clonar el repositorio e instalar las dependencias:
 
-### Clone AngularJS-Base
+### Clone CardioAdmin
 ```bash
 $ git clone https://github.com/Adaptarme/CardioAdmin.git
 $ cd CadioAdmin
