@@ -1,0 +1,70 @@
+<tabset class="tab-container" ng-init="steps={percent:20, step1:true, step2:false, step3:false}">
+    <tab heading="Step 1" active="steps.step1">
+        <form class="form-horizontal" name="step1" class="form-validation">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Tipo de Estudio</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>SPECT</option>
+                            <option>GATED</option>
+                            <option>GATED-PLANAR</option>
+                            <option>RCG</option>
+                            <option>PET</option>
+                            <option>PET/CT</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Radio Trazador</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>MIBI</option>
+                            <option>TALIO</option>
+                            <option>FDG</option>
+                            <option>TC/Estañoso</option>
+                            <option>AMONIO</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Apremio</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>DIPIRIDAMOL</option>
+                            <option>ESFUERZO</option>
+                            <option>FRIO</option>
+                            <option>HIPER Y FRIO</option>
+                            <option>NIT+DOBUTA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button ng-disabled="step1.$invalid" class="btn btn-default" ng-click="steps.step2=true">Siguiente</button>
+            </div>
+        </form>
+    </tab>
+    <tab heading="Step 2" disabled="step1.$invalid" active="steps.step2">
+      <form name="step2" class="form-validation">
+      <div class="modal-body">
+        <p>Your age:</p>
+        <input type="number" name="age" class="form-control" ng-model="age" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-rounded" ng-click="steps.step1=true">Anterior</button>
+          <button ng-disabled="step2.$invalid" class="btn btn-default" ng-click="steps.step3=true">Siguiente</button>
+        </div>
+      </form>
+    </tab>
+    <tab heading="Step 3" disabled="step2.$invalid" active="steps.step3">
+    <div class="modal-body">
+      <p class="m-b">Congraduations! You got the last step.</p>
+      <p>Just one click to finish it.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="steps.step2=true">Prev</button>
+        <button class="btn btn-default" ng-click="steps.percent=100">Click me to Finish</button>
+      </div>
+    </tab>
+  </tabset>

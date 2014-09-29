@@ -1,7 +1,7 @@
 angular
-	.module('patient.controllers', ['ngResource', 'ui.bootstrap', 'patient.services'])
-	.controller('PatientController', ['$scope', '$modal', patientController]);
-    
+	.module('patient.controllers', ['ngResource', 'mgo-angular-wizard', 'ui.bootstrap',  'patient.services'])
+	.controller('PatientController', ['$scope', '$modal', 'patientService', patientController]);
+
 function patientController($scope, $modal, patient) {
 	$scope.patients = patient.query();
 
@@ -19,6 +19,15 @@ function patientController($scope, $modal, patient) {
     	$modal.open({
     		templateUrl: 'app/ui/pages/patient/delete.html'
     	});
+    };
+
+    /**
+     * Mostrar un modal para administrar los estudios.
+     */
+    $scope.study = function () {
+        $modal.open({
+            templateUrl: 'app/ui/pages/patient/study.html'
+        });
     };
 
 }

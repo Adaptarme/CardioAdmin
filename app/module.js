@@ -4,7 +4,9 @@ angular
 	.module('app', [
 		'ngRoute',
 		'ngSanitize',
+		'ui.router',
 		'ui.bootstrap',
+		'ui.bootstrap.tabs',
 		'components',
 		// Patients
 		'patient.controllers',
@@ -17,6 +19,7 @@ angular
 
 /** Definimos las rutas de nuestra aplicación. */
 function configRoutes($routeProvider) {
+	/** Rutas de las paginas **/
 	$routeProvider
 	.when('/', {
 		templateUrl: 'app/ui/pages/dashboard/dashboard.html'
@@ -33,4 +36,5 @@ function configRoutes($routeProvider) {
 	.otherwise('/', {
 		redirectTo: '/'
 	});
+
 }
