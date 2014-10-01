@@ -1,5 +1,5 @@
 angular
-	.module('patient.controllers', ['ngResource', 'mgo-angular-wizard', 'ui.bootstrap',  'patient.services'])
+	.module('patient.controllers', ['ngResource', 'ui.bootstrap',  'patient.services'])
 	.controller('PatientController', ['$scope', '$modal', 'patientService', patientController]);
 
 function patientController($scope, $modal, patient) {

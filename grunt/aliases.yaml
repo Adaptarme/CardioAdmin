@@ -1,3 +1,13 @@
 # Tareas por defecto que se puede ejecutar escribiendo 'grunt'
 default:
   - 'watch'
+
+# Tareas para producción. Se puede ejecutar escribiendo 'grunt build'
+build:
+  - 'copy:html'
+  - 'useminPrepare'
+  - 'concat:generated' # Concatenar los .js
+  - 'cssmin:generated' # Minificar los .css
+  - 'uglify:generated' # Minificar los .js
+# - 'filerev'
+  - 'usemin:html'

@@ -1,4 +1,4 @@
-/** Concatenar archivos JavasScript.
+/** Concatenar archivos javascript.
  * @link https://github.com/gruntjs/grunt-contrib-concat
  */
 module.exports = {
