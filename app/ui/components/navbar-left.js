@@ -1,7 +1,6 @@
 angular
 	.module('components', ['ngRoute'])
-	.directive('isActive', ['$location', isActive])
-	.directive('navbarLeft', navbarLeft);
+	.directive('isActive', ['$location', isActive]);
 
 /** Colocar la cles 'active' a los item del nav. */
 function isActive($location) {
@@ -18,15 +17,5 @@ function isActive($location) {
 	return {
 		restrict: 'A',
 		link: link
-	};
-}
-
-/** Mostrar la barra de navegación izquierda. */
-function navbarLeft() {
-	return {
-		require: '?isActive',
-		restrict: 'A',
-		templateUrl: 'app/ui/components/navbar-left.html',
-		replace: true
 	};
 }

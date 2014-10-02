@@ -29,7 +29,7 @@
 	</div><!-- #header -->
 
 	<div class="main-container">
-		<div navbar-left></div>
+		<div class="nav-container" ng-include="'app/ui/components/navbar-left.html'"></div>
 		<section class="content-container">
 			<div class="page" ng-view></div>
 		</section>
@@ -45,7 +45,6 @@
 	<script src="lib/angular-resource/angular-resource.js"></script>
 	<script src="lib/angular-sanitize/angular-sanitize.js"></script>
 	<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
-	<script src="lib/lodash/dist/lodash.compat.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js js/app.js -->
