@@ -5,6 +5,7 @@ module.exports = {
 	files: ['app/ui/**/*.js'],
 	tasks: ['jshint'],
 	options: {
-		spawn: false
+		//spawn: false
+		livereload: true
 	}
 };

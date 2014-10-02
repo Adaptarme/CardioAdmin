@@ -36,5 +36,4 @@ function configRoutes($routeProvider) {
 	.otherwise('/', {
 		redirectTo: '/'
 	});
-
 }
