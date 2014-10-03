@@ -4,7 +4,7 @@
 			<input type="text" class="form-control" placeholder="Search" ng-model="searchText">
 		</div>
 		<div class="pull-right">
-			<button type="button" class="btn btn-success" ng-click="create()"><span class="glyphicon glyphicon-plus"></span> Create</button>
+			<button type="button" class="btn btn-success" ng-click="create()"><i class="fa fa-plus"></i> Create</button>
 		</div>
 	</div>
 	<table class="table table-hover table-responsive">
@@ -26,7 +26,7 @@
 				<td>{{ patient.dni }}</td>
 				<td>{{ patient.created_at }}</td>
 				<td><button type="button" class="btn btn-info btn-xs" tooltip="Add study" ng-click="study()"><i class="fa fa-file-text-o"></i></button> <button type="button" class="btn btn-primary btn-xs" tooltip="Edit"><i class="fa fa-pencil"></i></button>
-				<button type="button" class="btn btn-danger btn-xs" tooltip="Delete" ng-click="delete()"><span class="glyphicon glyphicon-trash"></span></button></td>
+				<button type="button" class="btn btn-danger btn-xs" tooltip="Delete" ng-click="delete()"><i class="fa fa-trash"></i></button></td>
 			</tr>
 		</tbody>
 	</table>
