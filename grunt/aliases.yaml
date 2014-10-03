@@ -11,3 +11,4 @@ build:
   - 'uglify:generated' # Minificar los .js
 # - 'filerev'
   - 'usemin:html'
+  - 'htmlmin:dist'
