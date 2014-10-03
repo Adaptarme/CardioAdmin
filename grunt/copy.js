@@ -3,7 +3,7 @@
  */
 module.exports = {
 	html: {
-		src: ['./index.html', 'app/**/*.html', 'app/**/*.json'],
+		src: ['./index.html', './favicon.ico', 'app/**/*.html', 'app/**/*.json'],
 		dest: 'dist/'
     }
 };
