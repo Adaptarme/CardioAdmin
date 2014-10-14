@@ -22,11 +22,11 @@ function configRoutes($routeProvider) {
 	/** Rutas de las paginas **/
 	$routeProvider
 	.when('/', {
-		templateUrl: 'app/ui/pages/dashboard/dashboard.html'
+		templateUrl: 'app/ui/pages/patient/index.html'
 	})
-	.when('/dashboard', {
+	/*.when('/dashboard', {
 		templateUrl: 'app/ui/pages/dashboard/dashboard.html'
-	})
+	})*/
 	.when('/patients', {
 		templateUrl: 'app/ui/pages/patient/index.html'
 	})
